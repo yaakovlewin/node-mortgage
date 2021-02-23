@@ -33,6 +33,13 @@ button:hover {
      */
 }
 
+.flex-right {
+    margin-left: auto;
+}
+
+.icon {
+    display: none;
+}
 
 
 #nav-bar {
