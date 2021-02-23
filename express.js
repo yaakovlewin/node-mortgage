@@ -20,7 +20,7 @@ ourApp.get('/my.html', (req, res) => {
 })
 
 ourApp.get('/about', (req, res) => {
-    res.send(`<h1>ff</h1>`)
+    res.send(`<h1>we are working on this page....</h1>`)
 
 })
 
