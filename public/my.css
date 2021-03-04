@@ -2,7 +2,7 @@
     font-family: sans-serif;
 }
 header {
-    height: 90px;
+    /* height: 90px; */
     background-color: rgb(255, 94, 0);
 }
 
@@ -50,7 +50,7 @@ button:hover {
 }
 
 
-#right-nav {
+.right-nav {
     width: 100%;
     display: flex;
     /* float: left; */
@@ -213,8 +213,7 @@ div {
 
 }
 
-@media screen and (max-width: 928px) {
-
+@media screen and (max-width: 928px){
     .div-about {
         flex-wrap: wrap-reverse;
     }
@@ -224,5 +223,32 @@ div {
     }
     .image {
         margin: 0rem;
+    }.icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 928px) {
+
+    .right-nav button:not(:last-child):not(:first-child){
+        display: none;
+    
+    }
+    
+}
+
+@media screen and (max-width: 928px){
+    .right-nav.responsive {position: relative;}
+    
+    .right-nav.responsive .icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .right-nav.responsive button{
+        float: none!important;
+        display: block!important;
+    
     }
 }
